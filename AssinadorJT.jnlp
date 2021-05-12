@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- 
+   Atenção Regionais: é necessário alterar o atributo 'codebase' abaixo para
+   a url base do JNLP em seu regional. NÃO DEVE SER COLOCADO O NOME DO ARQUIVO.JNLP!
+   Por exemplo: 
+   
+   URL para JNLP: https://trtx.jus.br/servidor/pje/AssinadorJT.jnlp
+   Codebase: https://trtx.jus.br/servidor/pje/
+   
+   Percebam que o codebase teve o nome do arquivo JNLP removido. O Java Web STart
+   fará a junção do codebase e do href para alcançar o arquivo JNLP.
+-->
+<jnlp spec="6.0+" 
+      codebase="https://github.com/thyagotosin/shodo/" 
+      href="AssinadorJT.jnlp">
+	<information>
+		<title>Shodo - Assinador Digital</title>
+		<vendor>CSJT - Conselho Superior da Justiça do Trabalho</vendor>
+		<homepage href="http://www.csjt.jus.br/" />
+		<description>Assinador fornecido pela Justiça do Trabalho para realizar assinaturas digitais no PJe</description>
+		<icon href="icone.jpg"></icon>
+		<icon href="splash_screen.png" kind="splash"></icon>
+		<icon href="icone.jpg" kind="shortcut"></icon>
+		<shortcut online="true">
+			<desktop />
+		</shortcut>
+	</information>
+	<security>
+		<all-permissions />
+	</security>
+	<resources>
+		<j2se version="1.8" />
+		<jar href="shodo.jar" />
+	</resources>
+	<update check="always" policy="always" />
+	<application-desc main-class="br.jus.csjt.assinadorjt.Main" />
+</jnlp>
