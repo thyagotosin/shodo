@@ -11,7 +11,7 @@
    fará a junção do codebase e do href para alcançar o arquivo JNLP.
 -->
 <jnlp spec="6.0+" 
-      codebase="https://github.com/thyagotosin/shodo" 
+      codebase="https://github.com/thyagotosin/shodo/blob/main/" 
       href="AssinadorJT.jnlp">
 	<information>
 		<title>Shodo - Assinador Digital</title>
